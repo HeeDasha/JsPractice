@@ -120,15 +120,40 @@
 
 /* For 문을 활용하여 짝수 출력 */
 
-for(let i = 0; i<10 ; i++) {
+// for(let i = 0; i<10 ; i++) {
     
-    if(i%2){
+//     if(i%2){
 
-        continue;
-    }
-    console.log(i);
-}
+//         continue;
+//     }
+//     console.log(i);
+// }
 
 /* 알 수 있는건 For문은 0이 출력이 되고 While과 Do while은 0이 출력되지 않는다. 이유는 while 과 Do while은 i++ 를 진행을 먼저 하기에 0+1= 1, 즉 1부터 시작하기 때문이다. */
 /* 반면에 For문은 반복을 진행 후 증감이 되기 때문에 0부터 출력이 된다. */
+
+/* 사고 싶은 차를 물어보고 가격을 알려주는 Switch 문 */
+
+let car = prompt('무슨 차를 사고 싶나요?');
+
+switch(car) {
+    case '투싼' :
+        alert('200만원입니다.');
+        break;
+    case '모닝' :
+        alert('500만원');
+        break;
+    case '제네시스' :
+        alert('5000만원');
+        break ;
+    case '싼타페' :
+        alert('1000만원');
+        break ;
+    default :
+        alert('그런 자동차는 없습니다');   
+
+}
+
+
+
 
