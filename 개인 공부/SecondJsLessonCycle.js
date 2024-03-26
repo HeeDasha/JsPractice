@@ -194,8 +194,52 @@
 // 리턴 전에 여러 줄의 코드가 있을 경우 일반괄호를 사용할 수 없다.
 
 
+/* 객체 */
+
+// let makeAge = function(name,age) {
+//     return {
+//         name: name,
+//         age: age,
+//         job: 'programer',
+
+//     };
 
 
+// }
+
+// const Mike = makeAge('Mike',20);
+// console.log(Mike);
 
 
+// function isAdult(user){
+//     if(user.age < 20){
+//         return false
+//     }
+//     return true
 
+// }
+
+// const Mike = {
+//     name: 'Mike',
+//     age : 20
+// };
+
+// const Jane = {
+//     name: 'Jane',
+//     age : 25
+// };
+
+// console.log(isAdult(Mike));
+// console.log(isAdult(Jane));
+
+/* 객체 for ... in문  */
+
+// const Mike = {
+//     name  : 'mike',
+//     age :20,
+
+// };
+
+// for(x in Mike) {
+//     console.log(Mike[x]);
+// }
