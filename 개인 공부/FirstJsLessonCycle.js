@@ -1,99 +1,110 @@
-// 연산자 중 += '변수' 는  기존에 정의 된 변수에 += '변수'를 더한다 라고 생각하면 된다.
-// let num = 34;
+/* 연산자 중 += '변수' 는  기존에 정의 된 변수에 += '변수'를 더한다 라고 생각하면 된다. */
 
-// num *= 4;
-// console.log(num);
-// prompt(num);
+/* let num = 34;
 
-// name은 매개변수이고 test는 함수명이라고 불린다. ``은 백틱이라고 불리고 특정 변수의 값을 가져올 수 있다.
-// 함수를 사용하는 이유는 중복을 줄여주기 위해서 사용하는 것이다. --> 유지보수가 용의하다.
+num *= 4;
+console.log(num);
+prompt(num); 
 
-// function Tellname(name,age) {
+*/
 
-//     let msg = 'Sorry';
-//     if(name === 'mike' && age  === 20) {
-//         console.log("마이크님 환영합니다.")
+/* name은 매개변수이고 test는 함수명이라고 불린다. ``은 백틱이라고 불리고 특정 변수의 값을 가져올 수 있다.
+함수를 사용하는 이유는 중복을 줄여주기 위해서 사용하는 것이다. --> 유지보수가 용의하다. */
 
-//     }
-//     else{
-//         msg += ', ' + `${name}님은 마이크가 이닙니다.`;
-//         console.log(msg);
-//     }
+/*
 
-// }
+ function Tellname(name,age) {
 
-// Tellname('mike',  );
 
-// let name = 'jane'
+    let msg = 'Sorry';
+    if(name === 'mike' && age  === 20) {
+        console.log("마이크님 환영합니다.")
 
-// function Sayname(name) {
-//     console.log(name);
+    }
+    else{
+        msg += ', ' + `${name}님은 마이크가 이닙니다.`;
+        console.log(msg);
+    }
 
-// }
+} 
 
-// console.log('mike');
-// // console.log();
 
-// const Profile = {
-//     age : 20,
-//     name : 'Peter',
-//     hobby : 'Football'
+Tellname('mike',  );
 
-// }
+let name = 'jane'
 
-// Profile.job = 'Programmer';
+function Sayname(name) {
+    console.log(name);
 
-// // delete Profile.job;
+}
 
-// console.log(Profile);
 
-// function Object(name,age) {
 
-// return {
-//     name : name,
-//     age :  age,
+console.log('mike');
+console.log();
 
-// }
+const Profile = {
+    age : 20,
+    name : 'Peter',
+    hobby : 'Football'
 
-// }
+}
 
-// const Mike = Object('Mike',30);
+Profile.job = 'Programmer';
 
-// // Object(Mike);
+delete Profile.job;
 
-// console.log(Mike);
-// console.log('age' in Mike);
-// console.log('job' in Mike);
+console.log(Profile);
 
-// function Adult(user) {
+function Object(name,age) {
 
-//     if( !('age' in user) || user.age <20)
-//     {
-//         return `${user.name}은 성인이 아닙니다`;
+return {
+    name : name,
+    age :  age,
 
-//     }
-//     return `${user.name}은 성인입니다`;
+}
 
-// }
+}
 
-// const Peter = {
+const Mike = Object('Mike',30);
 
-//     name : '김희찬',
-//     age : 20,
+ Object(Mike);
 
-// };
+console.log(Mike);
+console.log('age' in Mike);
+console.log('job' in Mike);
 
-// const Jane = {
+function Adult(user) {
 
-//     name : '제인',
+    if( !('age' in user) || user.age <20)
+    {
+        return `${user.name}은 성인이 아닙니다`;
 
-// };
+    }
+    return `${user.name}은 성인입니다`;
 
-// Peter.Job = 'Programmer';
+}
 
-// for(x in Peter) {
-//     console.log(x);
-// }
+const Peter = {
 
-// // console.log(Adult(Peter));
-// // console.log (Adult(Jane));
+    name : '김희찬',
+    age : 20,
+
+};
+
+const Jane = {
+
+    name : '제인',
+
+};
+
+Peter.Job = 'Programmer';
+
+for(x in Peter) {
+    console.log(x);
+}
+
+console.log(Adult(Peter));
+console.log (Adult(Jane));
+
+*/
