@@ -283,5 +283,24 @@ for(x in Mike) {
 
 */
 
+/* 생성자 함수 : 상품 객체를 생성 */
+
+function Item(title, price) {
+
+    this.title = title;
+    this.price = price;
+    this.showPrice = function () {
+        console.log(`가격은 ${price}원 입니다.`);
+    };
 
 
+
+}
+
+const Item2 = Item("가방", 3000);
+const Item1 = Item("신발", 4000);
+const Item3 = Item("지갑", 5000);
+
+console.log(Item1,Item2,Item3);
+
+Item3.showPrice();
