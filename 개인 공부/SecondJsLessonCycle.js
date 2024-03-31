@@ -297,9 +297,9 @@ function Item(title, price) {
 
 }
 
-const Item2 = Item("가방", 3000);
-const Item1 = Item("신발", 4000);
-const Item3 = Item("지갑", 5000);
+const Item2 = new Item("가방", 3000);
+const Item1 = new Item("신발", 4000);
+const Item3 = new Item("지갑", 5000);
 
 console.log(Item1,Item2,Item3);
 
