@@ -3,14 +3,13 @@
 /* [변수] */
 
 /* var는 한번 선언된 변수를 다시 선언할 수 있다.*/
-/* [Example]*/ 
+/* [Example]*/
 
 /* var name = 'Peter';
 console.log(name);
 
 var name = 'Paul';
 console.log(name); */
-
 
 /* var는 선언하기 전에 사용할 수 있다. */
 /* [Example]*/
@@ -36,8 +35,7 @@ console.log(name1); */
 /* console.log(name) // TDZ 영역
 let name = 'peter'; //ReferenceError */
 
-
-// 호이스팅은 스코프 단위로 이루어진다 
+// 호이스팅은 스코프 단위로 이루어진다
 
 /* let age = 30;
 
@@ -74,6 +72,19 @@ showage(); */
 
 */
 
+/* 
+변수 호이스팅 
+ */
+
+/* 
+
+var a;   // a 변수 선언
+a = undefined; // 값 할당 
+console.log(a); // undefinded
+var a = 10;
+console.log(a); 
+
+*/
 
 /* 스코프 */
 
@@ -86,9 +97,37 @@ let, const : 블록 스코프
 
 */
 
-const age = 30;
+// 함수 스코프
 
-if(age>19) {
-    const txt = '성인'
-}
-console.log(txt);
+// var 는 함수 스코프이기 때문에 varScope() 함수에  var a ; 인 지역변수가 선언되어있고 값은 undefined로 초기화가 되어 있다. 이러한 과정을 호이스팅이라고 부른다.
+
+// function varScope() {
+//   var a ;
+//   a = undefined;  /* 호이스팅이 일어난 것  */
+
+//   if (true) {
+//     var a = 10;
+//   }
+//   console.log(a);
+// };
+
+// varScope(); // 함수 호출 후 값 10을 확인
+
+//블록 스코프
+
+/* let 그리고 const는 블록 스코프이기 때문에 let x 와 x의 할당 된 값을 참조하지 못하기 때문에 에러가 뜨는 것을 확인 할 수 있다.*/
+
+// function testBlockScope() {
+//   let x ;
+//   x = undefined;  /* 호이스팅 */
+
+//   if (true) {
+//     let x = 10;
+//   }
+//   console.log(x);
+// }
+
+// testBlockScope(); // 함수 호출 후 변수 x에 대해 참조하지 못하는 에러 발생
+
+
+
