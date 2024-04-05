@@ -86,9 +86,29 @@ let, const : 블록 스코프
 
 */
 
-const age = 30;
+/* const age = 30;
 
 if(age>19) {
     const txt = '성인'
 }
-console.log(txt);
+console.log(txt); */
+
+/* 2024-04-05 생성자 함수  */
+
+/* 여러 객체가 필요할 때 사용하는 함수가 생성자 함수이다. */ 
+
+
+function User(name,age) { //특징은 첫 글자는 대문자로 설정해줘야한다. 
+
+    this.name = name;
+    this.age = age;
+
+}
+
+let user1 = new User('Mike',30);
+let user2 = new User('Peter',40);
+let user3 = new User('Paul',20);
+
+console.log(user1);
+console.log(user2);
+console.log(user3);
