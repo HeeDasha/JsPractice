@@ -3,14 +3,13 @@
 /* [변수] */
 
 /* var는 한번 선언된 변수를 다시 선언할 수 있다.*/
-/* [Example]*/ 
+/* [Example]*/
 
 /* var name = 'Peter';
 console.log(name);
 
 var name = 'Paul';
 console.log(name); */
-
 
 /* var는 선언하기 전에 사용할 수 있다. */
 /* [Example]*/
@@ -36,8 +35,7 @@ console.log(name1); */
 /* console.log(name) // TDZ 영역
 let name = 'peter'; //ReferenceError */
 
-
-// 호이스팅은 스코프 단위로 이루어진다 
+// 호이스팅은 스코프 단위로 이루어진다
 
 /* let age = 30;
 
@@ -74,6 +72,19 @@ showage(); */
 
 */
 
+/* 
+변수 호이스팅 
+ */
+
+/* 
+
+var a;   // a 변수 선언
+a = undefined; // 값 할당 
+console.log(a); // undefinded
+var a = 10;
+console.log(a); 
+
+*/
 
 /* 스코프 */
 
