@@ -109,7 +109,7 @@ console.log(txt); */
 /* 여러 객체가 필요할 때 사용하는 함수가 생성자 함수이다. */ 
 
 
-function User(name,age) { //특징은 첫 글자는 대문자로 설정해줘야한다. 
+/* function User(name,age) { //특징은 첫 글자는 대문자로 설정해줘야한다. 
 
     this.name = name;
     this.age = age;
@@ -122,4 +122,31 @@ let user3 = new User('Paul',20);
 
 console.log(user1);
 console.log(user2);
-console.log(user3);
+console.log(user3); */
+
+// 2024-04-07 객체 및 method, this 확실히 공부하기 
+
+
+/* const peter = {
+
+    name : '김희찬',
+    age : 20,
+    fly(){                      //객체 프로퍼티에 할당 된 함수 를 '메소드'라고 한다 
+        console.log('날아간당');
+    }
+
+}
+
+console.log(peter.fly); */
+
+const user = {
+    name : '선영',
+    age : 20,
+    fly() {
+        console.log(`안녕하세요 저는 ${this.name} 입니다.`);
+        return true;
+    }
+
+}
+
+console.log(user.fly())
