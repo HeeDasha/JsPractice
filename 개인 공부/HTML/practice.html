@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Table</title>
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 12px;
+        }
+
+        caption {
+            font-size: 20px;
+        }
+        thead {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>여행 계획표</h1><br>
+    <table>
+        <caption>여행 계획</caption>
+
+        <thead>
+            <tr>
+                <td>숙소명</td>
+                <td>위치</td>
+                <td>가격</td>
+                <td>방 이름</td>
+                <td>바비큐장 실내외</td>
+                <td>바베큐장 가격</td>
+                <td>비고</td>
+                <td>총합</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>스카리아풀빌라</td>
+                <td rowspan="3">강릉</td>
+                <td>159,000원</td>
+                <td>401호(풀빌라)</td>
+                <td>전기그릴</td>
+                <td rowspan="7" bgcolor="yellow">20,000원</td>
+                <td>없음</td>
+                <td>179,000원</td>
+            </tr>
+            <tr>
+                <td>더강문풀빌라</td>
+                <td>135,150원</td>
+                <td>201호 풀빌라</td>
+                <td>전기그릴</td>
+                <td>수영장 미온수 80,000원 </td>
+                <td>155,150원</td>
+            </tr>
+            <tr>
+                <td>라미아까사풀빌라</td>
+                <td>139,000원</td>
+                <td>Plus동 204</td>
+                <td>개별 전기그릴</td>
+                <td></td>
+                <td>159,000원</td>
+            </tr>
+            <tr>
+                <td>올라운드원</td>
+                <td>홍천</td>
+                <td>150,000원</td>
+                <td>2ROUND</td>
+                <td>개별</td>
+                <td>위생 별로</td>
+                <td>170,000원</td>
+            </tr>
+            <td>조이토마토</td>
+            <td>포천</td>
+            <td>139,000원</td>
+            <td>Suite Couple B</td>
+            <td>개별</td>
+            <td></td>
+            <td>159,000원</td>
+            </tr>
+
+            <tr>
+                <td>라온 풀빌라</td>
+                <td>청주</td>
+                <td>150,000원</td>
+                <td>101호</td>
+                <td>개별 전기그릴</td>
+                <td>없음</td>
+                <td>170,000원</td>
+            </tr>
+
+
+
+        </tbody>
+    </table>
+
+    
+    <div class="button" id="button1"></div>
+    <div class="button" id="button2"></div>
+    <div class="button" id="button3"></div>
+    <div class="button" id="button4"></div>
+    <div class="button" id="button5"></div>
+    
+</body>
+
+</html>
