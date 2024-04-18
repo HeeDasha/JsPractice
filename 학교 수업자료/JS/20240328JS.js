@@ -83,3 +83,8 @@ while(i <= num){
 } 
 
 document.getElementById('sum-result').innerText = `0에서부터 ${num}의 합은 ${sum}입니다.`
+
+
+
+
+
