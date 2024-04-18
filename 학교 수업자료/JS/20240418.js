@@ -30,7 +30,7 @@ function sumResult(num1,num2) {
         let result = ''; // 변수 초기화
     
         for(i=1; i<10; i++) {
-            result += `${num} * ${i} = ${num*i} \n`;
+            result += `${num} * ${i} = ${num*i} \n`;  // += 대신 = 를 사용하면  result 값이 계속 덮어씌어진다.
         }
     
         return result; // 구구단 결과값 리턴받기
@@ -39,3 +39,6 @@ function sumResult(num1,num2) {
     
     
     document.getElementById('result2').innerText = gugudan();
+
+
+    
