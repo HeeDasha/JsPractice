@@ -1,0 +1,115 @@
+<!-- 2024-04-19 Form 태그 학습 -->
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag</title>
+
+    <!--     클래스와 속성명(id)의 차이는 중복이 가능하고 싶다면 class를 사용하고 고유한 성질 즉 하나의 이름으로 지정하고 싶으면 id(속성명)을 사용하면 된다. -->
+   
+   <style>
+
+        li {
+            list-style: circle;
+        }
+
+        #submit {
+            /* .은 클래스 #은 속성명(ID) */
+            margin-top: 5px;
+        }
+
+    </style>
+
+</head>
+
+
+
+<!-- input 태그에는 다양한 형식이 있다 ex) email,password,tel,url,number,range,password,date,month,week,time,hidden,file 등등 -->
+<!-- label은 입력받은 필드를 설명할 때 사용합니다. 말 그대로 어떤 태그를 사용했는지 설명해주는 것 웹 접근성 준수에 좋다 또는 코드 분석할 때 도움이 되는 것 -->
+
+
+<body>
+
+
+    <form>
+        <fieldset>  <!-- fieldset은 그룹으로 묵어주고 싶을 때 사용하는 태그이다. -->
+            <legend>Input Tag</legend>  <!-- legend 태그는 fieldset의 그룹명을 지정할 때 사용되는 태그이다. -->
+            <ul>
+                <li>
+                    <label for="email">이메일</label>
+                    <input type="email" id="email" required> <!-- requireds는 input의 형식을 검사해주는 기능 -->
+                </li>
+                <li>
+                    <lable for="text">Text</lable>
+                    <input type="text" id="text">
+                </li>
+                <li>
+                    <label for="tel">전화번호</label>
+                    <input type="tel" id="tel" required>
+                </li>
+                <li>
+                    <label for="url">url</label>
+                    <input type="url" id="url" />
+                </li>
+
+                <li>
+                    <label for="number">number</label>
+                    <input type="number" id="number" required min="5" max="10">
+                </li>
+                <li>
+                    <label for="range">range</label>
+                    <input type="range" id="range" required />
+                </li>
+                <li>
+                    <label for="password">password</label>
+                    <input type="password" id="password" required />
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>날짜 관련</legend>
+            <ul>
+                <li>
+                    <label for="date">date</label>
+                    <input type="date" id="date">
+                </li>
+                <li>
+                    <label for="month">month</label>
+                    <input type="month" id="month">
+                </li>
+                <li>
+                    <label for="week">week</label>
+                    <input type="week" id="week">
+                </li>
+
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>시간 관련</legend>
+            <ul>
+                <li>
+                    <label for="time">time</label>
+                    <input type="time" id="time">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>그 외</legend>
+            <ul>
+                <li>
+                    <input type="file" multiple />
+                </li>
+                <li>
+                    <input type="hidden" name="" value="" /> <!-- 서버측으로 어떠한 데이터를 넘길 때 사용하는 input 형식 -->
+                </li>
+            </ul>
+        </fieldset>
+
+        <input type="submit" value="제출하기" id="submit" /> 
+
+</body>
+
+</html>
