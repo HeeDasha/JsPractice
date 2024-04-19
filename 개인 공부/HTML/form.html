@@ -20,6 +20,16 @@
             /* .은 클래스 #은 속성명(ID) */
             margin-top: 5px;
         }
+        fieldset {
+            background-color: bisque;
+        }
+        legend {
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        #hidden{
+            list-style: none;
+        }
 
     </style>
 
@@ -102,7 +112,7 @@
                 <li>
                     <input type="file" multiple />
                 </li>
-                <li>
+                <li id="hidden">
                     <input type="hidden" name="" value="" /> <!-- 서버측으로 어떠한 데이터를 넘길 때 사용하는 input 형식 -->
                 </li>
             </ul>
