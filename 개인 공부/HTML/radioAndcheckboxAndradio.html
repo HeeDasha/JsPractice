@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio and Checkbox and select</title>
+</head>
+
+<body>
+    <form action="/action">
+        <fieldset>
+            <legend>좋아하는 색상을 선택해주세요</legend>
+            <ul>
+                <li>
+                    <label for="red">빨강</label>
+                    <input type="checkbox" id="red" value="red">
+                </li>
+                <li>
+                    <label for="주황">주황</label>
+                    <input type="checkbox" id="주황" value="주황">
+                </li>
+                <li>
+                    <label for="노랑">노랑</label>
+                    <input type="checkbox" id="노랑" value="노랑">
+                </li>
+                <li>
+                    <label for="초록">초록</label>
+                    <input type="checkbox" id="초록" value="초록">
+                </li>
+
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>배송 방법은?</legend>
+            <ul>
+                <li>
+                    <label for="free">무료</label>
+                    <input type="radio" name="delivery" id="free" value="free" />
+                </li>
+                <li>
+                    <label for="pay">유료</label>
+                    <input type="radio" name="delivery" id="pay" value="pay" />
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>자기소개서</legend>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>주문 상품을 선택해주세요</legend>
+            <ul>
+                <li>
+                    <select name="goods" id="">
+                        <option value="apple_10kg">사과10kg</option> <!-- value값이 서버에 전송이 된다 -->
+                        <option value="apple_20kg">사과20kg</option>
+                        <option value="apple_30kg">사과30kg</option>
+                        <option value="apple_40kg">사과40kg</option>
+                        <option value="apple_50kg">사과50kg</option>
+                        <option value="apple_60kg">사과60kg</option>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+        <button type="submit">제출하기</button>
+        <button type="reset">초기화하기</button>
+        <button type="button" onclick="alert(`Hello World`)">버튼</button>
+
+    </form>
+</body>
+
+</html>
