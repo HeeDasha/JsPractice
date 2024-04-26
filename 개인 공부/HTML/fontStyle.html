@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Font-Style</title>
     <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
         /*  html{
             font-family: serif,monospace;
         } */
@@ -26,6 +30,21 @@
         .font-variont {
             font-variant: small-caps; /* 작은 대문자 */
         }
+        .subtitle {
+            font-size: 30px;
+        }
+        .subtite-rem {
+            font-size: 2rem;
+        }
+        .subtite-em {
+            font-size: 2em;
+        }
+        .rectangle-width {
+            width: 100vw;
+            height: 100px;
+            background-color: yellow;
+        }
+
     </style>
 </head>
 
@@ -35,6 +54,37 @@
     <p class="content font-italic">HTML을 공부하는 과정입니다.</p>
     <p class="content font-weight-300">HTML을 공부하는 과정입니다.</p>
     <p class="content font-variont">HELLO,peter</p>
+    <hr/>
+
+    <h2>PX</h2>
+    <p class="subtitle">px에 대한 글</p>
+    <hr/>
+    <h2>REM</h2>
+    <p class="subtitle-rem">REM에 대한 글</p> <!-- REM은 최상위 태그의 px을 따라간다. -->
+    <hr/>
+    <h2>EM</h2> 
+    <p class="subtite-em">EM에 대한 글</p> <!-- em은 자기 자신의 px을 따라간다. 여기서 자기 사이즈는 부모 태그의 px을 따라간다. -->
+    <hr/>
+    <h2>vw</h2> 
+    <p class="subtite-em">vw(ViewPort width) 대한 글</p> <!-- ViewPort는 웹 브라우져의 화면을 가르킨다 -->
+    <div class="rectangle-width"></div>
+    <hr/>
+    <h2>vh</h2> 
+    <p class="subtite-em">vh(ViewPort height)에 대한 글</p> 
+    <div class="rectangle-height"></div>
+    <hr/>
+    
+
+
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>
