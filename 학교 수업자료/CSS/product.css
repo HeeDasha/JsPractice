@@ -1,0 +1,61 @@
+#container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+#prod_pic, #desc {
+    float: left;
+}
+
+#prod_pic {
+    margin: 20px 20px auto 10px;
+    padding: 0;
+}
+
+#cup {
+    box-shadow: 1px 1px 2px #eee;
+    outline: 1px dashed #ccc;
+    outline-offset: 7px;
+}
+
+#small_pic {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.small {
+    width: 60px;
+    height: 60px;
+}
+
+#small_pic img:hover {
+    cursor: pointer;
+}
+
+#desc {
+    width: 300px;
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+
+#desc button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+}
+
+#desc ul {
+    list-style: none;
+}
+
+#desc li {
+    font-size: 0.9em;
+    line-height: 1.8;
+}
+
+#desc .bluetext {
+    color: blue;
+}
+
